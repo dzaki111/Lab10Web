@@ -509,6 +509,69 @@ header('location: index.php');
 exit;
 ?>
 ```
+## 4\. Kode Tambahan (Demonstrasi OOP Dasar)
+
+Saya juga menyimpan file ini terpisah sebagai bukti pemahaman saya tentang konsep dasar *Class* dan *Object* di PHP.
+
+### 4.1 `mobil.php`
+
+```php
+<?php
+class Mobil
+{
+    private $warna;
+    private $merk;
+    private $harga;
+
+    public function __construct() 
+    {
+        $this->warna = "Biru";
+        $this->merk = "BMW";
+        $this->harga = "10000000";
+    }
+
+    public function gantiwarna ($warnaBaru)
+    {
+        $this->warna = $warnaBaru; 
+    }
+
+    public function tampilWarna ()
+    {
+        echo "Warna mobilnya: ";
+        echo $this->warna;
+    }
+}
+
+$a = new Mobil();
+$b = new Mobil();
+
+echo "<b>Mobil pertama</b><br>";
+$a->tampilWarna(); 
+echo "<br>Mobil pertama ganti warna<br>";
+$a->gantiwarna ("Merah");
+$a->tampilWarna(); 
+
+echo "<br><b>Mobil kedua</b><br>";
+$b->gantiwarna("Hijau");
+$b->tampilWarna(); 
+```
+screenshot
+
+<img width="1537" height="808" alt="Screenshot 2025-12-04 134216" src="https://github.com/user-attachments/assets/ea5f3bb1-bdc0-453b-bc37-d6d2904ad610" />
+
 
 -----
+
+## 5\. screenshot kodingannya
+
+**Tampilan awal**
+<img width="1534" height="933" alt="image" src="https://github.com/user-attachments/assets/60e79b2c-a97c-494e-a461-5f50027a4ebc" />
+
+
+**Tampilan Tambahkan Prodak**
+<img width="1230" height="827" alt="image" src="https://github.com/user-attachments/assets/b797aad7-b4ca-4c6b-9e1c-8acbf40ca769" />
+
+
+
+
 
