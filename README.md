@@ -1,11 +1,17 @@
 # Lab10Web
-
+#### Nama   = DZAKI ARIF RAHMAN  
+#### Kelas  = TI.24.A4  
+#### NIM    = 312410312  
+#### Matkul  = Pemograman Web 1 
 
 
 
 ## struktur nya
 <img width="134" height="262" alt="image" src="https://github.com/user-attachments/assets/b54e7090-c318-48d8-afc9-fb7d9cc27fa0" />
 
+Saya lampirkan hasil pengerjaan lanjutan tugas Praktikum 10, yaitu Modularisasi Aplikasi CRUD Data Barang menggunakan konsep Object-Oriented Programming (OOP).
+
+Tujuan utama dari tugas ini adalah untuk memisahkan fungsi-fungsi krusial (Koneksi Database dan Form Input) dari kode utama,
 
 ## 1\. Class Library (Komponen Modular)
 
@@ -506,49 +512,3 @@ exit;
 
 -----
 
-## 4\. Kode Tambahan (Demonstrasi OOP Dasar)
-
-Saya juga menyimpan file ini terpisah sebagai bukti pemahaman saya tentang konsep dasar *Class* dan *Object* di PHP.
-
-### 4.1 `mobil.php`
-
-```php
-<?php
-class Mobil
-{
-    private $warna;
-    private $merk;
-    private $harga;
-
-    public function __construct() 
-    {
-        $this->warna = "Biru";
-        $this->merk = "BMW";
-        $this->harga = "10000000";
-    }
-
-    public function gantiwarna ($warnaBaru)
-    {
-        $this->warna = $warnaBaru; 
-    }
-
-    public function tampilWarna ()
-    {
-        echo "Warna mobilnya: ";
-        echo $this->warna;
-    }
-}
-
-$a = new Mobil();
-$b = new Mobil();
-
-echo "<b>Mobil pertama</b><br>";
-$a->tampilWarna(); 
-echo "<br>Mobil pertama ganti warna<br>";
-$a->gantiwarna ("Merah");
-$a->tampilWarna(); 
-
-echo "<br><b>Mobil kedua</b><br>";
-$b->gantiwarna("Hijau");
-$b->tampilWarna(); 
-```
